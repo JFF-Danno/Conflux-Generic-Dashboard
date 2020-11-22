@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!--
+ Licensed to the Apache Software Foundation (ASF) under one or more
+  contributor license agreements.  See the NOTICE file distributed with
+  this work for additional information regarding copyright ownership.
+  The ASF licenses this file to You under the Apache License, Version 2.0
+  (the "License"); you may not use this file except in compliance with
+  the License.  You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+-->
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee
+                      http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+  version="3.1"
+  metadata-complete="true">
+
+  <display-name>Welcome to Tomcat</display-name>
+  <description>
+     Welcome to Tomcat
+  </description>
+  
+
+ <servlet>
+        <servlet-name>ConfluxServlet</servlet-name>
+        <servlet-class>Conflux.ConfluxServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ConfluxServlet</servlet-name>
+        <url-pattern>/Conflux</url-pattern>
+    </servlet-mapping>
+
+ <servlet>
+        <servlet-name>AddressServlet</servlet-name>
+        <servlet-class>Conflux.data.addressbook.AddressServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AddressServlet</servlet-name>
+        <url-pattern>/Address</url-pattern>
+    </servlet-mapping>
+
+ <servlet>
+        <servlet-name>TransactionServlet</servlet-name>
+        <servlet-class>Conflux.data.transaction.TransactionServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>TransactionServlet</servlet-name>
+        <url-pattern>/Transaction</url-pattern>
+    </servlet-mapping>
+
+<servlet>
+        <servlet-name>EventServlet</servlet-name>
+        <servlet-class>diary.event.EventServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>EventServlet</servlet-name>
+        <url-pattern>/Event</url-pattern>
+    </servlet-mapping>
+	<jsp-config>
+		<taglib>
+			<taglib-uri>http://dooper.com/tags/custom</taglib-uri>
+			<taglib-location>/WEB-INF/dooper.tld</taglib-location>
+		</taglib>
+	</jsp-config>
+
+</web-app>
