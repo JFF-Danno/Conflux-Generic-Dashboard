@@ -1,4 +1,4 @@
-Conflux Generic Dashboard.
+Conflux Generic Dashboard. #Conflux $CFX
 
 The purpose of this project is to provide an easy to deploy and develop web platform for building DApps and Off Chain utilities.
 
