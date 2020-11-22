@@ -8,7 +8,7 @@ The front end also makes use of the Javascript SDK.
 
 Currently 2 objects are provided with some basic functionality, these are intended as code examples as well as providing functionality.
 I expect this group of core objects will grow with each new project.
-The 1st 2 are Address Records which can be displayed on the dashboard. A Blockchain Id project is on my list of ideas to research.
+The 1st is Address Records which can be displayed on the dashboard. A Blockchain Id project is on my list of ideas to research.
 The 2nd is a Transaction Record. 
 
 (Projects that could use this platform) My research list.
