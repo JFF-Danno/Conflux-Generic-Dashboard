@@ -32,7 +32,7 @@ function StakingApp() {
            const cfx = await new Conflux({url: "http://test.confluxrpc.org",defaultGasPrice: 100,defaultGas: 1000000,logger: console});
 
            setDisabled(false);
-            const PRIVATE_KEY = '0xB2A8EBF93C38760FB70820B5F2F63B34F8E17382510BD5ED747CC56246426164';//process.env.PRIVATE_KEY;
+            const PRIVATE_KEY = '';//process.env.PRIVATE_KEY;
             const account = cfx.wallet.addPrivateKey(PRIVATE_KEY); // create account instance
              const contract = cfx.Contract({abi: staking.abi,address: "0x0888000000000000000000000000000000000002"});
            const tx0 = await contract.deposit(Drip.fromCFX(document.getElementById('spend-amount').value)).sendTransaction({ from: account }).executed();
